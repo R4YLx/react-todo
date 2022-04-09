@@ -21,27 +21,39 @@
 
 .wrapper {
 	width: 85vw;
-	height: 80vh;
+	height: 85vh;
 	background-color: #fafafa;
 	border-radius: 1rem;
 }
 
 h1 {
-	padding: 0.75rem;
+	margin-top: 0.75rem;
 	text-align: center;
 	font-weight: 700;
+}
+
+p {
+	font-size: 0.75rem;
+	color: #3478f6;
+	text-align: right;
+	padding: 0rem 1rem 1rem 0rem;
 }
 
 .todos-container {
 	height: 60vh;
 	overflow-y: scroll;
+	padding: 1rem 1rem 0rem 1rem;
+}
+
+ul {
+	list-style: none;
 }
 
 .form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 1.125rem 0rem;
+	padding-top: 0.5rem;
 }
 
 input[type='text'] {
@@ -57,4 +69,55 @@ button {
 	padding: 0.5rem 1.5rem;
 	border-radius: 0rem 0.25rem 0.25rem 0rem;
 	cursor: pointer;
+}
+
+.todo-title {
+	padding: 0.5rem;
+	color: #737373;
+	flex-basis: 90%;
+}
+
+.done .todo-title {
+	color: #acaaaa;
+	text-decoration: line-through;
+}
+
+li {
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+}
+
+.trashcan {
+	flex-basis: 10%;
+}
+
+.msg {
+	text-align: center;
+	font-size: 0.75rem;
+	color: red;
+}
+
+@media screen and (min-width: 720px) {
+	.wrapper {
+		width: 50vw;
+		height: 50vh;
+	}
+
+	.todos-container {
+		height: 30vh;
+		padding: 0rem 4rem 0rem 4rem;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.wrapper {
+		width: 30vw;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.wrapper {
+		max-width: 25vw;
+	}
 }
