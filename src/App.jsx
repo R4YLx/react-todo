@@ -59,7 +59,7 @@ function App() {
 		<div className='App'>
 			<div className='wrapper'>
 				<h1>Todos</h1>
-				<p onClick={toggleCompleted}>
+				<p className='hide' onClick={toggleCompleted}>
 					{hideCompleted ? 'Hide completed' : 'Show completed'}
 				</p>
 

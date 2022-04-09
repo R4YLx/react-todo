@@ -39,6 +39,10 @@ p {
 	padding: 0rem 1rem 1rem 0rem;
 }
 
+.hide {
+	cursor: pointer;
+}
+
 .todos-container {
 	height: 60vh;
 	overflow-y: scroll;
@@ -54,6 +58,10 @@ ul {
 	justify-content: center;
 	align-items: center;
 	padding-top: 0.5rem;
+}
+
+input[type='checkbox'] {
+	cursor: pointer;
 }
 
 input[type='text'] {
@@ -90,6 +98,7 @@ li {
 
 .trashcan {
 	flex-basis: 10%;
+	cursor: pointer;
 }
 
 .msg {
