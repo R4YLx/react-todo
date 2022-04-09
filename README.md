@@ -6,3 +6,5 @@ Try it here [LINK](react-todo-ray.netlify.app)
 @todo:
 
 - Hide completed function
+
+<img src="https://github.com/R4YLx/react-todo/blob/main/public/scrn.png"/>
